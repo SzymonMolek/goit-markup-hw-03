@@ -37,13 +37,19 @@ body
     font-style: normal;
     color: var(--normal-text);
     letter-spacing: 0.03em;
-    width: 1200px;
+    width: 1600px;
+    margin: auto;
+}
+
+ul li {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
 
 .main-container
 {
-    width: 1200px;
     justify-content: center;
     align-items: center;
 }
@@ -54,7 +60,10 @@ body
 }
 .first-word
 {
-    color: var(--first-logo-color)
+    display: inline;
+    color: var(--first-logo-color);
+    margin-top: 0;
+    margin-left: 215px;
 }
 .second-word
 {
@@ -64,74 +73,149 @@ body
 {
     color: var(--third-logo-color)
 }
-.main-logo
+.main-logo, .main-logo-bottom
 {
     font-family: 'Raleway', sans-serif;
     font-size: 26px; 
     font-weight: bold;
 }
 
-.navigation, .contact-us
+.main-logo-bottom
+{
+        display: inline-block;
+    margin-top: 60px;
+}
+
+.navigation, .contact-phone, .contact-mail
 {
     font-size: 14px;
     letter-spacing: 0.03em;
 }
 
-
-.contact-us 
+.contact-mail-top,
+.contact-phone-top
 {
-    color: var(--contact-us-color);
+    color: var(--normal-text);
     border: var(--border);
 }
-.contact-us:hover 
+
+.contact-mail-bottom,
+.contact-phone-bottom 
 {
-    color: var(--select-bgcolor);
+    color: var(--sentence-color);
+    border: var(--border);
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 215px;
+    margin: 0;
+    display: inline-block;
 }
-.contact-us:focus 
+
+.contact-phone:hover,
+.contact-mail:hover 
 {
     color: var(--select-bgcolor);
 }
 
+.contact-phone:focus
+.contact-mail:focus 
+{
+    color: var(--select-bgcolor);
+}
 
 #sentence
 {
     font-size: 44px;
     color: var(--sentence-color);
     letter-spacing: 0,06em;
+    padding-top: 220px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    
 }
 .button-sentence
 {
     background-color: var(--second-bgcolor);
     height: 600px;
     text-align: center;
+    margin-bottom: 0;
 }
 
-.about-us, .our-workers
+.workers-list
+{
+    height: 648px;
+    background-color: var(--our-workers-bgcolor);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.about-us
 {
     font-size: 36px;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px;
+    margin: 0;
+}
+
+.our-profile_center
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.our-workers {
+    font-size: 36px;
+    text-align: center;
+    background-color: var(--our-workers-bgcolor);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 94px;
+    margin-bottom: 0;
+}
+
+.company-profile 
+{
+    text-align: center;
+}
+
+.our-profile
+{
+    display: inline;
+    text-align: center;
+    margin: 0;
 }
 
 .title-profile
 {
     text-transform: uppercase;
     font-weight: 14px;
+    margin-top: 94px;
 }
 
 .profile-content
 {
     color: var(--content-color);
     font-size: 14px;
+    width: 270px;
+    height: 75px;
+}
+
+.company-profile_second-type
+{
+    box-sizing: border-box;
+    padding-left: 30px;
 }
 
 /* buttons */
 .main-button
 {
-        color: var(--normal-bgcolor);
-        background-color: var(--select-bgcolor);
-        border: var(--border);
-        cursor: pointer;
-        width: 200px;
-        height: 50px;
+    color: var(--normal-bgcolor);
+    background-color: var(--select-bgcolor);
+    border: var(--border);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
 }
 .main-button:hover 
 {
@@ -192,12 +276,15 @@ a:focus
 ul
 {
     list-style-type: none;
+    padding: 0;
 }
 
 /* name and surname (index.html) */
 .workers
 {
     background-color: var(--our-workers-bgcolor);
+    display: inline;
+    text-align: center;
 }
 .first-name
 {
@@ -236,12 +323,17 @@ ul
     color: var(--street-color);
     font-size: 14px;
     width: 252px;
+    padding-top: 20px;
+    padding-bottom: 9px;
+    padding-left: 215px;
+    margin: 0;
+    display: block;
 }
 
-ul li 
+.portfolio-content
 {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
+    width: 1170px;
+    margin-bottom: 94px;
+    margin-top: 94px;
+    margin-left: 215px;
 }
