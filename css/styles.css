@@ -1,0 +1,247 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+
+/* variable */
+:root
+{
+    /* ONLY TEXT COLOURS */
+    --normal-text: #212121;
+    --normal-bgcolor: #F5F4FA;
+    --select-color: white;
+    --select-bgcolor: #2196F3;
+
+    --contact-us-color: #757575;
+
+    --nav-header-bgcolor: #ECECEC;
+    --sentence-color: #FFFFFF;
+    --first-logo-color: #2196F3;
+    --second-logo-color: #000000;
+    --third-logo-color: #FFFFFF;
+
+    --our-workers-bgcolor: #F5F4FA;
+    --content-color: #757575;
+    --border: none;
+
+    --street-color: #FFFFFF;
+
+    /* ONLY BACKGROUND COLORS */
+    --second-bgcolor: #2F303A;
+}
+
+/* all documents */
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    color: var(--normal-text);
+    letter-spacing: 0.03em;
+    width: 1200px;
+    margin: auto;
+}
+
+.main-container
+{
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-header
+{
+    background-color: var(--nav-header-bgcolor);
+}
+.first-word
+{
+    color: var(--first-logo-color)
+}
+.second-word
+{
+    color: var(--second-logo-color)
+}
+.third-word
+{
+    color: var(--third-logo-color)
+}
+.main-logo
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px; 
+    font-weight: bold;
+}
+
+.navigation, .contact-us
+{
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+
+.contact-us 
+{
+    color: var(--contact-us-color);
+    border: var(--border);
+}
+.contact-us:hover 
+{
+    color: var(--select-bgcolor);
+}
+.contact-us:focus 
+{
+    color: var(--select-bgcolor);
+}
+
+
+#sentence
+{
+    font-size: 44px;
+    color: var(--sentence-color);
+    letter-spacing: 0,06em;
+}
+.button-sentence
+{
+    background-color: var(--second-bgcolor);
+    height: 600px;
+    text-align: center;
+}
+
+.about-us, .our-workers
+{
+    font-size: 36px;
+}
+
+.title-profile
+{
+    text-transform: uppercase;
+    font-weight: 14px;
+}
+
+.profile-content
+{
+    color: var(--content-color);
+    font-size: 14px;
+}
+
+/* buttons */
+.main-button
+{
+        color: var(--normal-bgcolor);
+        background-color: var(--select-bgcolor);
+        border: var(--border);
+        cursor: pointer;
+        width: 200px;
+        height: 50px;
+}
+.main-button:hover 
+{
+    color: var(--select-bgcolor);
+    background-color: var(--normal-bgcolor);
+    border: var(--border);
+    cursor: pointer;
+}
+.main-button:focus 
+{
+    color: var(--select-bgcolor);
+    background-color: var(--normal-bgcolor);
+    border: var(--border);
+    cursor: pointer;
+}
+
+button
+{
+    color: var(--normal-text);
+    background-color: var(--normal-bgcolor);
+    border: var(--border);
+    cursor: pointer;
+    width: 93px;
+    height: 38px;
+}
+button:hover 
+{
+    color: var(--select-color);
+    background-color: var(--select-bgcolor);
+    cursor: pointer;
+}
+button:focus 
+{
+    color: var(--select-color);
+    background-color: var(--select-bgcolor);
+    cursor: pointer;
+}
+
+/* anhor */
+a
+{
+    color: var(--normal-text);
+    text-decoration: none;
+    border: var(--border);
+    font-style: normal;
+}
+a:hover 
+{
+    color: var(--select-bgcolor);
+    text-decoration: none;
+}
+a:focus 
+{
+    color: var(--select-bgcolor);
+    text-decoration: none;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+/* name and surname (index.html) */
+.workers
+{
+    background-color: var(--our-workers-bgcolor);
+}
+.first-name
+{
+    font-weight: Medium;
+    color: var(--normal-text);
+    text-decoration: none;
+}
+.profession
+{
+    color: var(--content-color)
+}
+
+/* keyword-alt (portfolio.html) */
+.keyword 
+{
+    font-size: 18px;
+    font-weight: Bold;
+    color: var(--normal-text);
+    text-decoration: none;
+}
+/* keyword content (portfolio.html) */
+.keyword-content
+{
+    color: var(--content-color);
+    letter-spacing: 0.06em;
+}
+
+.footer-informations 
+{
+    background-color: var(--second-bgcolor);
+    height: 252px;
+}
+
+.street
+{
+    color: var(--street-color);
+    font-size: 14px;
+    width: 252px;
+}
+
+ul li 
+{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
