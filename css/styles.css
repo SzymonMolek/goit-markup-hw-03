@@ -41,6 +41,11 @@ body
     margin: auto;
 }
 
+*
+{
+    box-sizing: border-box;
+}
+
 ul li {
     display: inline-block;
     justify-content: center;
@@ -56,14 +61,19 @@ ul li {
 
 .nav-header
 {
-    background-color: var(--nav-header-bgcolor);
+    box-sizing: content-box;
+    background-color: var(--third-logo-color);
+    height: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 .first-word
 {
     display: inline;
     color: var(--first-logo-color);
     margin-top: 0;
-    margin-left: 215px;
+    padding-left: 215px;
+    padding-right: 93px;
 }
 .second-word
 {
@@ -82,12 +92,23 @@ ul li {
 
 .main-logo-bottom
 {
-        display: inline-block;
+    display: inline-block;
     margin-top: 60px;
 }
 
-.navigation, .contact-phone, .contact-mail
+.navigation
 {
+    display: flex;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    padding-right: 321px;
+}
+
+.navigation,
+.contact-phone,
+.contact-mail 
+{
+    display: inline-block;
     font-size: 14px;
     letter-spacing: 0.03em;
 }
@@ -97,6 +118,7 @@ ul li {
 {
     color: var(--normal-text);
     border: var(--border);
+    padding-left: 50px;
 }
 
 .contact-mail-bottom,
@@ -208,6 +230,7 @@ ul li {
 }
 
 /* buttons */
+
 .main-button
 {
     color: var(--normal-bgcolor);
@@ -230,6 +253,12 @@ ul li {
     background-color: var(--normal-bgcolor);
     border: var(--border);
     cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 94px;
 }
 
 button
@@ -320,6 +349,7 @@ ul
 
 .street
 {
+    display: inline;
     color: var(--street-color);
     font-size: 14px;
     width: 252px;
@@ -327,13 +357,13 @@ ul
     padding-bottom: 9px;
     padding-left: 215px;
     margin: 0;
-    display: block;
 }
 
 .portfolio-content
 {
+    display: flex;
     width: 1170px;
     margin-bottom: 94px;
-    margin-top: 94px;
+    margin-top: 34px;
     margin-left: 215px;
 }
