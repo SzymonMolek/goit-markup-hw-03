@@ -52,6 +52,49 @@ ul li {
     align-items: center;
     margin: auto;
 }
+button {
+    color: var(--normal-text);
+    background-color: var(--normal-bgcolor);
+    border: var(--border);
+    cursor: pointer;
+    width: 93px;
+    height: 38px;
+}
+
+button:hover {
+    color: var(--select-color);
+    background-color: var(--select-bgcolor);
+    cursor: pointer;
+}
+
+button:focus {
+    color: var(--select-color);
+    background-color: var(--select-bgcolor);
+    cursor: pointer;
+}
+
+/* anhor */
+a {
+    color: var(--normal-text);
+    text-decoration: none;
+    border: var(--border);
+    font-style: normal;
+}
+
+a:hover {
+    color: var(--select-bgcolor);
+    text-decoration: none;
+}
+
+a:focus {
+    color: var(--select-bgcolor);
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
 .main-container
 {
@@ -83,7 +126,7 @@ ul li {
 {
     color: var(--third-logo-color)
 }
-.main-logo, .main-logo-bottom
+.main-logo
 {
     font-family: 'Raleway', sans-serif;
     font-size: 26px; 
@@ -92,6 +135,9 @@ ul li {
 
 .main-logo-bottom
 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
     display: inline-block;
     margin-top: 60px;
 }
@@ -126,11 +172,10 @@ ul li {
 {
     color: var(--sentence-color);
     border: var(--border);
-    padding-top: 9px;
     padding-bottom: 9px;
     padding-left: 215px;
     margin: 0;
-    display: inline-block;
+    display: block;
 }
 
 .contact-phone:hover,
@@ -152,7 +197,8 @@ ul li {
     letter-spacing: 0,06em;
     padding-top: 220px;
     margin-top: 0;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 0;
     
 }
 .button-sentence
@@ -196,9 +242,11 @@ ul li {
     margin-bottom: 0;
 }
 
-.company-profile 
+.company-profile
 {
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .our-profile
@@ -225,11 +273,14 @@ ul li {
 
 .company-profile_second-type
 {
-    box-sizing: border-box;
+    /* box-sizing: border-box;
+    width: 270px:
+    height: 101px;
     padding-left: 30px;
+    padding-top: 0;
+    padding-bottom: 10px
+    margin: 0; */
 }
-
-/* buttons */
 
 .main-button
 {
@@ -261,54 +312,6 @@ ul li {
     margin-top: 94px;
 }
 
-button
-{
-    color: var(--normal-text);
-    background-color: var(--normal-bgcolor);
-    border: var(--border);
-    cursor: pointer;
-    width: 93px;
-    height: 38px;
-}
-button:hover 
-{
-    color: var(--select-color);
-    background-color: var(--select-bgcolor);
-    cursor: pointer;
-}
-button:focus 
-{
-    color: var(--select-color);
-    background-color: var(--select-bgcolor);
-    cursor: pointer;
-}
-
-/* anhor */
-a
-{
-    color: var(--normal-text);
-    text-decoration: none;
-    border: var(--border);
-    font-style: normal;
-}
-a:hover 
-{
-    color: var(--select-bgcolor);
-    text-decoration: none;
-}
-a:focus 
-{
-    color: var(--select-bgcolor);
-    text-decoration: none;
-}
-
-ul
-{
-    list-style-type: none;
-    padding: 0;
-}
-
-/* name and surname (index.html) */
 .workers
 {
     background-color: var(--our-workers-bgcolor);
@@ -326,7 +329,6 @@ ul
     color: var(--content-color)
 }
 
-/* keyword-alt (portfolio.html) */
 .keyword 
 {
     font-size: 18px;
@@ -334,7 +336,7 @@ ul
     color: var(--normal-text);
     text-decoration: none;
 }
-/* keyword content (portfolio.html) */
+
 .keyword-content
 {
     color: var(--content-color);
@@ -347,23 +349,38 @@ ul
     height: 252px;
 }
 
-.street
+.get-more
 {
     display: inline;
+    height: 81px;
+    width: 246px;
+}
+.street
+{
+    /* display: inline;
+    height: 81px;
+    width: 246px; */
+    margin-top: 20px;
     color: var(--street-color);
     font-size: 14px;
-    width: 252px;
-    padding-top: 20px;
-    padding-bottom: 9px;
     padding-left: 215px;
-    margin: 0;
+    padding-bottom: 9px;
+    margin-bottom: 0;
 }
 
-.portfolio-content
+.portfolio-buttons
+{
+    display: table;
+    margin: 0 auto;
+    width: 1170px;
+    margin-bottom: 94px;
+}
+
+/* .portfolio-content
 {
     display: flex;
     width: 1170px;
     margin-bottom: 94px;
     margin-top: 34px;
     margin-left: 215px;
-}
+} */
