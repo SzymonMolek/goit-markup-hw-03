@@ -50,7 +50,7 @@ ul li {
     display: inline-block;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 0;
 }
 button {
     color: var(--normal-text);
@@ -142,21 +142,19 @@ ul {
     margin-top: 60px;
 }
 
-.navigation
+.homepage
 {
     display: flex;
-    font-size: 16px;
-    letter-spacing: 0.03em;
     padding-right: 321px;
 }
 
-.navigation,
-.contact-phone,
-.contact-mail 
+.navigation
 {
-    display: inline-block;
-    font-size: 14px;
+    display: flex;
+    gap: 46px;
+    font-size: 16px;
     letter-spacing: 0.03em;
+    padding-top: 5px;
 }
 
 .contact-mail-top,
@@ -164,7 +162,11 @@ ul {
 {
     color: var(--normal-text);
     border: var(--border);
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0.03em;
     padding-left: 50px;
+    padding-top: 5px;
 }
 
 .contact-mail-bottom,
@@ -211,17 +213,19 @@ ul {
 
 .workers-list
 {
-    height: 648px;
+    display: flex;
+    gap: 30px;
     background-color: var(--our-workers-bgcolor);
-    margin-bottom: 0;
-    margin-top: 0;
+    padding-bottom: 94px;
+    margin: 0;
+    justify-content: center;
 }
 
 .about-us
 {
     font-size: 36px;
     text-align: center;
-    padding-top: 94px;
+    padding-top: 0;
     padding-bottom: 50px;
     margin: 0;
 }
@@ -236,7 +240,7 @@ ul {
     font-size: 36px;
     text-align: center;
     background-color: var(--our-workers-bgcolor);
-    padding-top: 50px;
+    padding-top: 94px;
     padding-bottom: 50px;
     margin-top: 94px;
     margin-bottom: 0;
@@ -247,6 +251,7 @@ ul {
     text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
+    margin: 0;
 }
 
 .our-profile
@@ -256,11 +261,22 @@ ul {
     margin: 0;
 }
 
+.our-profile_list
+{
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    justify-content: center;
+}
+
+
 .title-profile
 {
     text-transform: uppercase;
+    text-align: left;
     font-weight: 14px;
-    margin-top: 94px;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .profile-content
@@ -269,6 +285,7 @@ ul {
     font-size: 14px;
     width: 270px;
     height: 75px;
+    margin: 0;
 }
 
 .company-profile_second-type
@@ -323,10 +340,16 @@ ul {
     font-weight: Medium;
     color: var(--normal-text);
     text-decoration: none;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    margin: 0;
+
 }
+
 .profession
 {
-    color: var(--content-color)
+    color: var(--content-color);
+    margin: 0;
 }
 
 .keyword 
@@ -373,7 +396,7 @@ ul {
     display: table;
     margin: 0 auto;
     width: 1170px;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
 }
 
 /* .portfolio-content
