@@ -25,10 +25,8 @@
         <div class="homepage">
           <!-- <a class="main-logo" href=https://szymonmolek.github.io/goit-markup-hw-01 target="_self">WebStudio</a> -->
           <!-- <a class="main-logo" href="index.html" target="_self">WebStudio</a> -->
-          <div class="main-logo-flex">
-            <a class="main-logo" href="index.html" target="_self"
-              ><p class="first-word">Web<span class="second-word">Studio</span></p></a
-            >
+          <div class="main-logo-flex-top">
+          <a class="main-logo" href="index.html" target="_self"><p class="first-word">Web<span class="second-word">Studio</span></p></a>
           </div>
 
           <!-- TopBar (add links to subpages) -->
@@ -38,67 +36,70 @@
             <a class="contact" href="Kontakt">Kontakt</a>
           </nav>
 
+
           <!-- ContactUs -->
-          <a class="contact-mail-top" href="mailto:abc@abc.en">info@devstudio.com</a>
-          <a class="contact-phone-top" href="tel:000000000">+48 111 111 111</a>
+          <div class="contact-top">
+            <a class="contact-mail-top" href="mailto:abc@abc.en">info@devstudio.com</a>
+            <a class="contact-phone-top" href="tel:000000000">+48 111 111 111</a>
+          </div>
         </div>
       </header>
 
       <main class="portfolio-buttons">
         <div class="buttons">
-          <button type="button">Wszystkie</button>
-          <button type="button">Strony</button>
-          <button type="button">Aplikacje</button>
-          <button type="button">Dizajn</button>
-          <button type="button">Marketing</button>
+          <button type="button-portfolio">Wszystkie</button>
+          <button type="button-portfolio">Strony</button>
+          <button type="button-portfolio">Aplikacje</button>
+          <button type="button-portfolio">Dizajn</button>
+          <button type="button-portfolio">Marketing</button>
         </div>
-        <div class="portfolio-content">
-          <ul class="pictures-content">
-            <li>
+        <div class="portfolio-list">
+          <ul class="list-content">
+            <li class="segment">
               <img src="images/Technocrack.jpg" alt="Technocrack" width="370" height="294" />
               <p class="keyword">Technocrack</p>
               <p class="keyword-content">Strona internetowa</p>
             </li>
-            <li>
+            <li class="segment">
               <img src="images/orlean-star.jpg" alt="Basketball battle" width="370" height="294" />
               <p class="keyword">Grafika New Orlean vs Golden Star</p>
               <p class="keyword-content">Dizajn</p>
             </li>
-            <li>
+            <li class="segment">
               <img src="images/seafood.jpg" alt="Restaurant" width="370" height="294" />
               <p class="keyword">Restauracja Seafood</p>
               <p class="keyword-content">Aplikacja</p>
             </li>
 
             <!--  -->
-            <li>
+            <li class="segment">
               <img src="images/projekt-prime.jpg" alt="Headphones" width="370" height="294" />
               <p class="keyword">Projekt Prime</p>
               <p class="keyword-content">Marketing</p>
             </li>
-            <li>
+            <li class="segment">
               <img src="images/projekt-boxes.jpg" alt="Boxes" width="370" height="294" />
               <p class="keyword">Project Boxes</p>
               <p class="keyword-content">Aplikacja</p>
             </li>
-            <li>
+            <li class="segment">
               <img src="images/inspiration-borders.jpg" alt="Website" width="370" height="294" />
               <p class="keyword">Inspiration has no Borders</p>
               <p class="keyword-content">Strona internetowa</p>
             </li>
 
             <!--  -->
-            <li>
+            <li class="segment">
               <img src="images/magazyn-li-edition.jpg" alt="Newspaper" width="370" height="294" />
               <p class="keyword">Magazyn Limited Edition</p>
               <p class="keyword-content">Dizajn</p>
             </li>
-            <li>
+            <li class="segment">
               <img src="images/projekt-lab.jpg" alt="Label" width="370" height="294" />
               <p class="keyword">Projekt LAB</p>
               <p class="keyword-content">Marketing</p>
             </li>
-            <li>
+            <li class="segment">
               <img
                 src="images/growing-buisness.jpg"
                 alt="Frontend developer"
@@ -114,18 +115,17 @@
 
       <!-- footer - informations -->
       <footer class="footer-informations">
-        <!-- <a class="main-logo" href=https://szymonmolek.github.io/goit-markup-hw-01 target="_self">WebStudio</a> -->
-        <!-- <a class="main-logo" href="index.html" target="_self">WebStudio</a> -->
-        <div class="main-logo-flex">
-          <a class="main-logo-bottom" href="index.html" target="_self"
-            ><p class="first-word">Web<span class="third-word">Studio</span></p></a
-          >
-        </div>
 
+          <!-- <a class="main-logo" href=https://szymonmolek.github.io/goit-markup-hw-01 target="_self">WebStudio</a> -->
+          <!-- <a class="main-logo" href="index.html" target="_self">WebStudio</a> -->
+          <div class="main-logo-flex-bottom">
+            <a class="main-logo" href="index.html" target="_self"><p class="first-word">Web<span class="third-word">Studio</span></p></a>
+          </div>
+        
         <address class="get-more">
           <p class="street">m. Warszawa, Aleje Jerozolimske 21</p>
           <div class="contact-bottom">
-            <a class="contact-phone-bottom" href="tel:000000000">+48 111 111 111</a> <br />
+            <a class="contact-phone-bottom" href="tel:000000000">+48 111 111 111</a> <br/>
             <a class="contact-mail-bottom" href="mailto:abc@abc.en">info@devstudio.com</a>
           </div>
         </address>
