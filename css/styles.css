@@ -301,7 +301,6 @@ ul
 {
     font-size: 36px;
     text-align: center;
-    padding-top: 94px;
     padding-bottom: 50px;
     width: 1170px;
     margin-left: 215px;
@@ -327,6 +326,7 @@ ul
     justify-content: center;
     width: 1170px;
     margin: auto;
+    padding-bottom: 94px;
 }
 
 .title-profile
