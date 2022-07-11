@@ -28,6 +28,7 @@
     /* ONLY BACKGROUND COLORS */
     --second-bgcolor: #2F303A;
     --ridge-color: #f2f2f2;
+    --solid-frame: rgb(212, 209, 209);
 }
 
 *,
@@ -134,7 +135,7 @@ ul
     display: flex;
     background-color: var(--third-logo-color);
     height: 80px;
-    border-bottom: 1px, ridge var(--ridge-color);
+    border-bottom: 1px solid var(--solid-frame);
     width: 1600px;
     justify-content: space-around;
     margin-left: auto;
@@ -467,4 +468,23 @@ ul
     gap: 30px;
     padding-bottom: 94px;
     justify-content: center;
+}
+
+.segment
+{
+    border-bottom: 1px solid var(--solid-frame);
+    border-left: 1px solid var(--solid-frame);
+    border-right: 1px solid var(--solid-frame);
+}
+
+.worker-segment
+{
+    border-color: var(--solid-frame);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+    box-shadow: 
+    0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
 }
