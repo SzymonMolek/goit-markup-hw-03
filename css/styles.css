@@ -276,7 +276,11 @@ ul
     gap: 30px;
     background-color: var(--our-workers-bgcolor);
     width: 1170px;
+    width: 1170px;
+    align-items: center;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .about-us
@@ -285,10 +289,11 @@ ul
     text-align: center;
     padding-top: 0;
     padding-bottom: 50px;
-    margin: 0;
+    margin: auto;
     letter-spacing: 0,03em;
     width: 1170px;
-    margin-left: 215px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .bg-workers
@@ -302,30 +307,35 @@ ul
     font-size: 36px;
     text-align: center;
     padding-bottom: 50px;
+    margin: auto;
     width: 1170px;
-    margin-left: 215px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .company-profile
 {
     display: flex;
     gap: 30px;
-    text-align: center;
     padding-top: 94px;
     padding-bottom: 94px;
-    justify-content: center;
     width: 1170px;
-    margin-left: 215px;
+    align-items: center;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .our-profile_list
 {
     display: flex;
     gap: 30px;
-    margin: 0;
-    justify-content: center;
     width: 1170px;
+    width: 1170px;
+    align-items: center;
     margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 94px;
 }
 
@@ -386,9 +396,12 @@ ul
     gap: 8px;
     padding-top: 94px;
     padding-bottom: 20px;
-    margin-left: 215px;
-    margin-right: 215px;
-}
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    width: 1170px;
+    }
+
 
 .workers
 {
@@ -433,7 +446,7 @@ ul
     color: var(--content-color);
     letter-spacing: 0.06em;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     padding-left: 24px;
     border-bottom: 1px;
     border-bottom-style: ridge;
@@ -478,12 +491,18 @@ ul
     flex-wrap: wrap;
     gap: 30px;
     padding-bottom: 94px;
-    width: 1177.5px;
+    /* width: 1177.5px;
+    margin: auto; */
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: auto;
+    width: 1170px;
 }
 
-.segment
+figure
 {
+    width: 367.5px;
     border-bottom: 1px solid var(--solid-frame);
     border-left: 1px solid var(--solid-frame);
     border-right: 1px solid var(--solid-frame);
