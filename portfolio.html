@@ -12,46 +12,40 @@
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
 
     <!-- css file -->
-    <link rel="stylesheet" href="css/styles.css" /> <!-- ZMIANA!-->
+    <link rel="stylesheet" href="css/styles.css" />
 
     <title>Portfolio</title>
   </head>
   <body>
       <!-- Header -->
-      <header class="website-header"> <!-- before: nav-header-->
-        <section id="header-nav"> <!-- before: homepage-->
-            <div class="container-nav"> <!--before: main-logo-flex-top-->
-              <!-- TopBar (add links to subpages) -->
-              <div class="header-nav">
-
-                <!-- <a class="main-logo" href=https://szymonmolek.github.io/goit-markup-hw-01 target="_self">WebStudio</a> -->
-                <!-- <a class="main-logo" href="index.html" target="_self">WebStudio</a> -->
-                <h2 class="logo">
-                  <a href="index.html" target="_self"><span>Web</span>Studio</a>
-                </h2>
-                
-                <nav class="navMenu">
-                <ul class="top-bar">
-                  <li><a href="agencja">Agencja</a></li>
-                  <li><a href="portfolio.html" target="_self">Portfolio</a></li>
-                  <li><a href="kontakt">Kontakt</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            <!-- ContactUs -->
-            <div class="contact-us"> <!--before: contact-top-->
-              <ul>
-                <li>
-                  <a class="contact-mail-top" href="mailto:abc@abc.en"> info@devstudio.com </a>
-                </li>
-                <li>
-                  <a class="contact-phone-top" href="tel:000000000"> +48 111 111 111 </a>
-                </li>
+  </head>
+  <body>
+    <header class="web-header">
+      <section id="header-navigation">
+        <div class="container">
+          <div class="topbar">
+            <h2 class="main-logo">
+              <a href="index.html"><span>Web</span>Studio</a>
+            </h2>
+            <nav>
+              <ul class="topbar-menu">
+                <li><a href="Agency">Agencja</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="Contact">Kontakt</a></li>
               </ul>
-            </div>
-        </section>
-      </header>
+            </nav>
+            <ul class="contact-us">
+              <li>
+                <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+              </li>
+              <li>
+                <a href="tel:+48111111111"> +48 111 111 111 </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </header>
 
     <!-- END OF HEADER / TOPBAR -->
 
@@ -60,7 +54,7 @@
         <div class="portfolio section">
 
           <div class="buttons-bar">
-            <ul class="container-details">
+            <ul class="details">
               <li class="detail"><button type="button">Wszystkie</button></li>
               <li class="detail"><button type="button">Strony</button></li>
               <li class="detail"><button type="button">Aplikacje</button></li>
@@ -70,7 +64,7 @@
           </div>
 
           <div class="label">
-            <ul class="container-details">
+            <ul class="details">
               <li class="detail">
                 <figure class="photo">
                 <img src="images/Technocrack.jpg" alt="Technocrack" width="370" height="294" />
